@@ -18,10 +18,3 @@ _Documentation and manifests for my local home lab, currently running OKD._
 |okd4-compute-2      | Worker           | Fedora CoreOS | 4    | 16  | 192.168.60.205 |
 |okd4-services       | DNS/LB/Web/NFS   | CentOS 8      | 4    | 16  | 192.168.60.210 |
 |okd4-pfsense        | Router/DHCP      | FreeBSD       | 1    | 1   | 192.168.60.1   |
-
-## Hardware
-Currently, this cluster is fully virtualized on a single ESXi host.  I plan to add at least 2 bare-metal nodes in the future to provide for at least _some_ level of redundancy should the ESXi host go down.
-### Hosts
-| Device             | CPU                                    | RAM       | Disk Space                     | OS                |
-|--------------------|----------------------------------------|-----------|--------------------------------|-------------------|
-| Dell Poweredge R610| 2x Intel Xeon E5645 (24 Logical Cores) | 96GB DDR3 | 6x 1TB Crucial SSDs in RAID 50 | VMware ESXi 6.7u3 |
